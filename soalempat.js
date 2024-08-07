@@ -3,9 +3,9 @@ let ratio = 3
 
 let jumlah = 0
 
-for (let i = 1; i <= 10; i++) {
-    let deret = suku_pertama*(1 - ratio**i)/(1-ratio)
-    console.log("Nilai deret geometri ke-"+i+" adalah "+deret)
+for (let n = 1; n <= 10; n++) {
+    let deret = suku_pertama * Math.pow(ratio, (n-1))
+    console.log("Nilai deret geometri ke-"+n+" adalah "+deret)
     jumlah += deret
 }
 
